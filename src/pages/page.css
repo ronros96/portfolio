@@ -1,3 +1,18 @@
 section{
+  position: absolute;
   color: var(--white);
+  height: 100svh;
+  width: 50svw;
+}
+
+.left-side{
+  left: 0;
+  padding: 2rem 0 2rem 2rem;
+  background-color: var(--dgray);
+}
+
+.right-side{
+  right: 0;
+   padding: 2rem 2rem 2rem 0;
+  background-color: var(--white);
 }

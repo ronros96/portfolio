@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@property --gradient-angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left-side .container{
+  padding: .5rem 0 .5rem .5rem;
+  background-image: linear-gradient(180deg, var(--pri-red), var(--pri-blue));
+}
+
+.left-side .content{
+  background-color: var(--dgray);
+  grid-template-columns: 1fr 30rem 1fr;
+}
+
+.left-side h1{
+  align-self: end;
+  grid-column: 2 / 2;
+}
+
+.left-side div{
+  align-self: start;
+  grid-column: 2 / 2;
+
+  p:last-child{
+    margin-top: var(--gap2x)
+  }
+}
+
+.left-side a{
+  position: relative;
+  display: block;
+  margin: .5rem 0 0;
+  width: 100%;
+  height: 3rem;
+  border-radius: 100vmax;
+  text-align: center;
+  isolation: isolate;
+
+  span{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    border: solid .25rem var(--white);
+    background-color: var(--dgray);
+    border-radius: inherit;
+  }
+  
+  &::before,
+  &::after{
+    content: '';
+    position: absolute;
+    background-image: conic-gradient(from var(--gradient-angle), var(--pri-red), var(--pri-blue), var(--pri-purple), var(--pri-red));
+    border-radius: inherit;
+    inset: 0;
+    z-index: -1;
+  }
+
+
+  &::after{
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity .5s ease;
+  }
+
+  &:hover::before,
+  &:hover::after{
+    animation: rotateBorder 1s var(--ease) infinite;
+  }
+  &:hover span{
+    border-color: transparent;
+    inset: .25rem;
+  }
+
+  &:hover::after{
+    opacity: .5;
+  }
+}
+
+@keyframes rotateBorder{
+  0% { --gradient-angle: 0deg;}
+  100% { --gradient-angle: 360deg;}
+}
+
+.right-side .container{
+  padding: .5rem .5rem .5rem 0;
+  background-color: var(--solid-red);
+}
+
+.right-side .content{
+  background-color: var(--white);
+}

@@ -3,25 +3,24 @@ import './page.css';
 import {motion} from 'motion/react';
 
 import { usePopUp } from "@src/store/store";
+import Left from '@layout/left';
+import Right from '@src/layout/right';
 
 const Page = () =>{
-  const popUp =  usePopUp((state:any) => state.setPopHover);
-  const isHover = usePopUp((state:any) => state.isHover);
+  // const popUp =  usePopUp((state:any) => state.setPopHover);
+  // const isHover = usePopUp((state:any) => state.isHover);
 
   return(
-    <section className='text-center'>
-      <motion.h1 
-        onClick={()=>{popUp(!isHover)}}
-        onMouseEnter={()=>{popUp(true)}}
-        onMouseLeave={()=>{popUp(false)}}
-        initial="init"
-        animate={isHover ? 'pop':'init'} 
-      >
-        Hello There.
-        <PopUp>General Kenobi</PopUp>
-      </motion.h1>
-      <p>Let's get ready, and may the supreme fathers of programming bestow their power upon you.</p>
-    </section>
+    <>
+      <title>Aaron Rosales</title>
+      <section className='left-side'>
+        <Left/>
+      </section>
+      <section className='right-side'>
+        <Right/>
+      </section>
+    </>
+    
   )
 }
 export default Page
