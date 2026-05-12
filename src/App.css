@@ -75,10 +75,13 @@ h1,h2,h3,h4,h5,h6{
 p,a{
   margin-bottom: 1rem;
   font-family: inherit;
-  font-size: var(--gap);
+  font-size: var(--font-base);
   font-weight: 400;
   color: inherit;
   line-height: 1.5;
+  span{
+    font-size: inherit;
+  }
 }
 
 em,u{

@@ -1,18 +1,38 @@
 section{
-  position: absolute;
-  color: var(--white);
+  position: relative;
   height: 100svh;
-  width: 50svw;
+  width: 100svw;
 }
 
 .left-side{
-  left: 0;
-  padding: 2rem 0 2rem 2rem;
+  padding: 1rem 1rem 0;
+}
+.right-side{
+  padding: 0 1rem 1rem;
+}
+
+.left-side{
   background-color: var(--dgray);
 }
 
 .right-side{
-  right: 0;
-   padding: 2rem 2rem 2rem 0;
   background-color: var(--white);
+}
+
+@media screen and (min-width:1200px){
+  section{
+    position: absolute;
+    height: 100svh;
+    width: 50svw;
+  }
+
+  .left-side{
+    left: 0;
+    padding: 2rem 0 2rem 2rem;
+  }
+
+  .right-side{
+    right: 0;
+    padding: 2rem 2rem 2rem 0;
+  } 
 }
