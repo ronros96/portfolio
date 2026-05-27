@@ -1,17 +1,20 @@
-import Card from "./Card";
 import "./cards.css";
+import Card from "./Card";
+import Data from "@src/data/projects.json";
 
 const Cards = () =>{
-  let projects = [];
-
-  for(let i=0; i < 30; i++){
-    projects.push(<Card/>);
-  }
+  const data = Data;
 
   return(
     <div className="card-container">
       <div className="card-content">
-        {projects}
+        {
+          data.map((data,i)=>{
+            return (
+              <Card key={i} props={data}/>
+            )  
+          })
+        }
       </div>   
     </div>
   )

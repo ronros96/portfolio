@@ -1,0 +1,38 @@
+[
+  {
+    "name":"MEEC",
+    "type":"graphic",
+    "img":"meec.webp",
+    "tags":["Branding","Logo Design","Vector"],
+    "desc":"Build a logo for a perishable goods delivery company.",
+    "link":"",
+    "case":"Create a logo for a hirable company that will focus on delivering food products such as eggs, vegatables, condiments, etc. that will supply certain hotels and restaurants."
+  },
+  {
+    "name":"Solaire Resort North",
+    "type":"website",
+    "img":"solaire-sn.webp",
+    "tags":["Drupal","Twig","Drupal Module","HTML / CSS","Native Javascript","Full Responsive"],
+    "link":"https://sn.solaireresort.com/",
+    "desc":"From my former company, I was able to create and maintain this Hotel website from scratch using Drupal 10 with the integration of HTML, CSS, and JS.",
+    "case":""
+  },
+  {
+    "name":"SMC Better Rivers",
+    "type":"website",
+    "img":"better-rivers.webp",
+    "tags":["React JS","Type-script","HTML / CSS","Full Responsive"],
+    "link":"https://betterrivers.com.ph/",
+    "desc":"From my former company, I was able to create and maintain this simple charity website from scratch using React JS.",
+    "case":""
+  },
+  {
+    "name":"A Simple Parallax Website",
+    "type":"website",
+    "img":"simple-parallax.webp",
+    "tags":["HTML / CSS","Native Javascript","Full Responsive"],
+    "link":"https://ronros96.github.io/simple-parallax/",
+    "desc":"A exercise given to me for evaluation to create an full responsive website that can do full parallax effects using simple CSS.",
+    "case":""
+  }
+]

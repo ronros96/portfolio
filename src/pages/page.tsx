@@ -1,22 +1,27 @@
-import PopUp from '@components/popup/popUp';
 import './page.css';
-import {motion} from 'motion/react';
+import clsx from 'clsx';
 
-import { usePopUp } from "@src/store/store";
+import { useActive } from "@src/store/store";
 import Left from '@layout/left';
 import Right from '@src/layout/right';
 
 const Page = () =>{
-  // const popUp =  usePopUp((state:any) => state.setPopHover);
-  // const isHover = usePopUp((state:any) => state.isHover);
+  const active =  useActive((state:any) => state.setActive);
+  const isActive = useActive((state:any) => state.isHover);
 
   return(
     <>
       <title>Aaron Rosales</title>
-      <section className='left-side'>
+      <section 
+        className='left-side'
+        onMouseOver={()=>{active(false)}}
+      >
         <Left/>
       </section>
-      <section className='right-side'>
+      <section 
+        className={clsx('right-side',{'active':isActive})} 
+        onMouseOver={()=>{active(true)}}
+      >
         <Right/>
       </section>
     </>
