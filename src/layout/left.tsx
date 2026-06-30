@@ -31,7 +31,7 @@ const Left = () =>{
         </div>
         <div>
           <p>A seasoned Front-end Developer and Creative Artist with {year()} years of experience across various industries, including Digital Marketing, Product Design, Magazine Layout Design, and E-commerce.</p>
-          <p><a className='cta' href="./resume.pdf" target='_blank'><span>View my Resume</span></a></p>
+          <p><a className='cta' href="./resume-2026.pdf" target='_blank'><span>View my Resume</span></a></p>
         </div>
         <div className='contact-me'>
           <motion.a 
