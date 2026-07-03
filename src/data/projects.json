@@ -31,6 +31,14 @@
     "link":"https://ronros96.github.io/simple-parallax/",
     "desc":"A exercise given to me for evaluation to create an full responsive website that can do full parallax effects using simple CSS."
   },
+   {
+    "name":"HR - Employee Referral Program",
+    "type":"graphic",
+    "img":"hr-img.webp",
+    "tags":["Advertisement","Poster Design","Vector"],
+    "link":"hr-employee-referral.pdf",
+    "desc":"A company request to create an print ad that will promote the employee referral program."
+  },
   {
     "name":"Walanjo - Crispy Fried Chicken",
     "type":"graphic",
