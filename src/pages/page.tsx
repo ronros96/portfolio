@@ -22,7 +22,7 @@ const Page = () =>{
       </section>
       <section 
         className={clsx('right-side',{'active':isActive})} 
-        onMouseOver={()=>{active(true)}}
+        onClick={()=>{active(true)}}
       >
         <Right/>
       </section>
