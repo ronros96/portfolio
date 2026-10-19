@@ -1,27 +1,19 @@
 [
   {
+    "name":"Simple CRUD",
+    "type":"website",
+    "img":"simple-crud.webp",
+    "tags":["React JS","Zustand","ShadCN","Tailwind", "HTML / CSS"],
+    "link":"https://ronros96.github.io/simple-crud/",
+    "desc":"A Simple CRUD system, where you can manage some user profile."
+  },
+  {
     "name":"MEEC",
     "type":"graphic",
     "img":"meec.webp",
     "tags":["Branding","Logo Design","Vector"],
     "link":"meec-2.pdf",
     "desc":"Build a logo for a perishable goods delivery company."
-  },
-  {
-    "name":"Solaire Resort North",
-    "type":"website",
-    "img":"solaire-sn.webp",
-    "tags":["Drupal","Twig","Drupal Module","HTML / CSS","Native Javascript","Full Responsive"],
-    "link":"https://sn.solaireresort.com/",
-    "desc":"From my former company, I was able to create and maintain this Hotel website from scratch using Drupal 10 with the integration of HTML, CSS, and JS."
-  },
-  {
-    "name":"SMC Better Rivers",
-    "type":"website",
-    "img":"better-rivers.webp",
-    "tags":["React JS","Type-script","HTML / CSS","Full Responsive"],
-    "link":"https://betterrivers.com.ph/",
-    "desc":"From my former company, I was able to create and maintain this simple charity website from scratch using React JS."
   },
   {
     "name":"A Simple Parallax Website",
