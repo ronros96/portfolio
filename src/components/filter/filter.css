@@ -15,9 +15,10 @@
   overflow: hidden;
   cursor: pointer;
 
-  transition-property: background-color, right, max-height;
-  transition-duration: .3s;
-  transition-timing-function: var(--ease);
+  transition: 
+    background-color .3s var(--ease), 
+    right .3s var(--ease),
+    max-height .3s var(--ease);
 
   &::after{
     content: '...';
@@ -135,9 +136,9 @@
   user-select: none;
   color: #fff;
 
-  transition-property: background-color color;
-  transition-duration: .3s;
-  transition-timing-function: var(--ease);
+  transition: 
+    background-color .3s var(--ease), 
+    color .3s var(--ease);
 
   .uncheck{
     display: none;

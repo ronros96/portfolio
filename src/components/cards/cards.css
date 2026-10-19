@@ -41,9 +41,7 @@
   max-width: 1680px;
   margin: 0 auto;
 
-  transition-property: column;
-  transition-duration: .5s;
-  transition-timing-function: var(--ease);
+  transition: column .5s var(--ease);
   
   .last-content{
     display: flex;
