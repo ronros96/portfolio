@@ -4,7 +4,7 @@
     "type":"website",
     "img":"simple-crud.webp",
     "tags":["React JS","Zustand","ShadCN","Tailwind", "HTML / CSS"],
-    "link":"https://ronros96.github.io/simple-crud/",
+    "link":"https://simple-crud-rouge.vercel.app/",
     "desc":"A Simple CRUD system, where you can manage some user profile."
   },
   {

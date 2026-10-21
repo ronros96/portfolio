@@ -304,7 +304,10 @@
       filter: blur(10px) grayscale(100%);
       opacity: .7;
 
-      transition: opacity .5s var(--ease),filter .5s var(--ease);
+      transition: 
+        background-color .5s var(--ease),
+        opacity .5s var(--ease), 
+        filter .5s var(--ease);
     }
   }
 }
