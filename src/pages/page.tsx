@@ -1,6 +1,5 @@
 import './page.css';
 import clsx from 'clsx';
-
 import { useActive } from "@src/store/store";
 import { useFilter } from "@src/store/store";
 import Left from '@layout/left';

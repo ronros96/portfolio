@@ -6,8 +6,6 @@ import { useScroll } from "@src/store/store";
 
 function App() {
   const scrolled = useScroll((state:any) => state.scrolled);
-  console.log(scrolled)
-
   return (
     <motion.div
       initial="start" 
