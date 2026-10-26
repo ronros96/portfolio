@@ -1,4 +1,5 @@
 import "./cards.css";
+import { motion } from "motion/react";
 import Card from "./Card";
 import Data from "@src/data/projects.json";
 import { useFilter } from "@src/store/store";
@@ -18,7 +19,7 @@ const Cards = () =>{
 
   return(
     <div className="card-container">
-      <div className="card-content">
+      <motion.div layout className="card-content">
         {
           filteredProjects.map((data,i)=>{
             return (
@@ -27,7 +28,7 @@ const Cards = () =>{
           })
         }
         <span className="last-content">End of content</span>
-      </div>   
+      </motion.div>   
 
     </div>
   )

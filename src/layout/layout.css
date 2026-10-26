@@ -51,7 +51,15 @@
       }
       .sub-header{
         opacity: 1;
+        padding: 1.5rem;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         right: 2svw;
+        img{
+          max-width: 5rem;
+        }
       }
     }
   }
@@ -94,6 +102,7 @@
 .container{
   width: 100%;
   height: 100%;
+  max-width: initial;
 }
 
 .content{
@@ -105,11 +114,6 @@
   width: 100%;
   height: 100%;
   color: var(--white);
-}
-
-.container{
-  width: 100%;
-  max-width: initial;
 }
 
 .left-side .container{
@@ -126,7 +130,7 @@
   grid-template-columns: 1fr 40rem 1fr;
 
   @media screen and (min-width:1200px){
-    display: grid;
+    display: block;
     align-items: center;
     justify-content: center;
     overflow: hidden;
