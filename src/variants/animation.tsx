@@ -21,7 +21,7 @@ export const scrollVar = {
     top:0
   },
   scrolled:{
-    top:'-100svh'
+    marginTop:'-100svh'
   },
 }
 
